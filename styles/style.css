@@ -1,62 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+
+body {
     font-family: "Poppins", sans-serif;
-  font-weight: weight;
-  font-style: normal;
+    font-weight: weight;
+    font-style: normal;
 }
+
 body {
     margin: 0;
     padding: 0;
     background-color: #000;
-  }
-  
-  .copper-background {
+}
+
+.copper-background {
     position: relative;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
     background-color: #000;
-  }
-  
-  .glow-layer {
+}
+
+.glow-layer {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: radial-gradient(
-      ellipse 80% 60% at 50% 0%,
-      rgba(249, 115, 22, 0.25),
-      transparent 70%
-    );
-  }
-  
-  .site-content {
+    background: radial-gradient(ellipse 80% 60% at 50% 0%,
+            rgba(249, 115, 22, 0.25),
+            transparent 70%);
+}
+
+.site-content {
     position: relative;
     z-index: 10;
     color: white;
     padding: 60px 20px;
-  }
+}
+
 /*nav style*/
-.header{
+.header {
     max-width: 1140px;
     margin: 0 auto;
 }
-.navigation{
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navigation ul{
+
+.navigation ul {
     display: flex;
     justify-content: space-between;
     gap: 34px;
     list-style: none;
 }
-.navigation h3{
+
+.navigation h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
-.navigation ul li{
+
+.navigation ul li {
     font-size: 1rem;
     font-weight: 600;
     color: white;
@@ -64,36 +69,41 @@ body {
 
 /*banner styles*/
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 69px;
 }
-.banner div h1{
+
+.banner div h1 {
     font-size: 3.2rem;
     font-weight: bold;
     margin: 0px;
 }
-.banner div p{
+
+.banner div p {
     font-size: 1rem;
     font-weight: 600;
 }
-.banner div button{
+
+.banner div button {
     font-size: 1rem;
     font-weight: 400;
-    width: 190px;
+    width: 150px;
     height: 40px;
     background: linear-gradient(135deg, #e74008, #b36b73);
     color: white;
     border: none;
     border-radius: 40px;
 }
-.banner div button > span{
+
+.banner div button>span {
     padding-left: 10px;
 }
-.banner img{
+
+.banner img {
     background-image: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
     width: fit-content;
@@ -101,4 +111,79 @@ body {
     background-size: cover;
 }
 
+/*alibaba section*/
+.alibaba {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
 
+/*cards style*/
+.cards {
+    max-width: 1067px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.cards .card {
+    width: 302px;
+    height: 462px;
+    border-radius: 8px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+    /* subtle pink glow */
+    background-color: rgba(255, 255, 255, 0.08);
+    /* slightly brighter on hover */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/*gear style*/
+.gear {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+}
+
+.gear div button {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(135deg, #e74008, #b36b73);
+    color: white;
+    border: none;
+    border-radius: 40px;
+}
+
+.gear div button>span {
+    padding-left: 10px;
+}
