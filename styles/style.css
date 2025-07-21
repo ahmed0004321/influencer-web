@@ -187,3 +187,58 @@ body {
 .gear div button>span {
     padding-left: 10px;
 }
+
+@media screen and (max-width: 576px){
+    .navigation{
+        flex-direction: column;
+    }
+    .navigation ul {
+        padding: 0px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner div h1{
+        font-size: 1.8rem;
+    }
+    .banner div p{
+        font-size: 0.8rem;
+    }
+    .banner div{
+        text-align: center;
+    }
+
+    .alibaba{
+        flex-wrap: wrap;
+    }
+    .alibaba img{
+        padding: 7px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .gear{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .gear div{
+        text-align: center;
+        padding: 20px;
+    }
+    .gear div h1{
+        font-size: 1.5rem;
+    }
+    .gear div p{
+        font-size: 0.8rem;
+    }
+    .gear img{
+        width: 100%;
+    }
+}
